@@ -1,0 +1,5 @@
+1. The import brings in the high-level `pipeline` utility, which bundles model loading, tokenization, inference, and output formatting into a single callable component.
+2. Creating `pipeline("sentiment-analysis")` loads a pre-trained sentiment classifier—usually a DistilBERT model fine-tuned on SST-2—and prepares it for direct text input without any manual preprocessing.
+3. The variable `text` stores the raw sentence that will be analyzed, and the pipeline internally handles conversion into tokens the model can understand.
+4. Calling `classifier(text)` sends the string through tokenization, feeds the encoded form into the model, converts model logits into probabilities, and returns a list of prediction dictionaries.
+5. The print statements extract the predicted sentiment label and its confidence score from the first element of the result list, displaying them alongside the original text.
