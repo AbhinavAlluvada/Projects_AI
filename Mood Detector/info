@@ -1,0 +1,10 @@
+About the Sentiment Analysis Model
+
+This is a pretrained sentiment analysis model from Hugging Face.
+Internally, it is based on a Transformer neural network trained on large amounts of text.
+
+The model reads a sentence and classifies it as POSITIVE or NEGATIVE by understanding word meaning and context, not just keywords.
+
+You are not training it from scratch; you are using learned knowledge and applying rules on top of it to change behavior.
+
+This is the same type of model used in chatbots, reviews analysis, and social media monitoring.
